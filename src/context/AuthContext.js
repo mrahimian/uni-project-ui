@@ -35,7 +35,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (username, password, setLoading) => {
     setLoading(true);
     await axios
-      .post(`${apiUrl}/verify`, {
+      .post(`${apiUrl}/api/v1/login`, {
         username,
         password,
       })
