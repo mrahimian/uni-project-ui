@@ -30,7 +30,7 @@ function Home() {
       if (response?.data) {
         setImages(response.data);
       } else {
-        toast.error("Something went wrong");
+        toast.error(response.statusText);
       }
     } catch (error) {
       console.error("Error fetching images:", error);

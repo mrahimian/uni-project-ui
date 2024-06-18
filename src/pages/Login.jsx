@@ -46,6 +46,7 @@ export default function Login() {
                 Password
               </label>
               <input
+                type="password"
                 placeholder="Password"
                 {...register("password", {
                   required: "Required",

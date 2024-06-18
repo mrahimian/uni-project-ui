@@ -22,7 +22,7 @@ const AddUser = () => {
         toast.success("User added successfully");
         reset();
       } else {
-        toast.error("There is a problem");
+        toast.error(response.response.status);
       }
     } catch (error) {
       console.error("Error adding user:", error);
